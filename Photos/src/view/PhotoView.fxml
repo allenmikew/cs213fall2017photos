@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.OpenPhotoController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="450.0" fitWidth="450.0" layoutX="14.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="483.0" layoutY="114.0" text="Photo Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="507.0" layoutY="153.0" text="Caption">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="520.0" layoutY="255.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="520.0" layoutY="317.0" text="Tags">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" alignment="TOP_LEFT" layoutX="568.0" layoutY="114.0" prefHeight="36.0" prefWidth="224.0" text="name" wrapText="true" />
+      <Label fx:id="captionLabel" alignment="TOP_LEFT" layoutX="568.0" layoutY="153.0" prefHeight="97.0" prefWidth="224.0" text="caption" wrapText="true" />
+      <Label fx:id="dateLabel" alignment="TOP_LEFT" layoutX="568.0" layoutY="254.0" prefHeight="58.0" prefWidth="224.0" text="date" wrapText="true" />
+      <Label fx:id="tagsListLabel" alignment="TOP_LEFT" layoutX="568.0" layoutY="317.0" prefHeight="220.0" prefWidth="217.0" text="tags list" />
+      <Button fx:id="forwardButton" layoutX="413.0" layoutY="538.0" mnemonicParsing="false" onAction="#nextPicture" text="&gt;" />
+      <Button fx:id="backwardButton" layoutX="345.0" layoutY="538.0" mnemonicParsing="false" onAction="#previousPicture" text="&lt;" />
+   </children>
+</AnchorPane>
